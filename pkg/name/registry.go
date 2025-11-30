@@ -25,7 +25,7 @@ import (
 )
 
 // Detect more complex forms of local references.
-var reLocal = regexp.MustCompile(`.*\.local(?:host)?(?::\d{1,5})?$`)
+var reLocal = regexp.MustCompile(`.*\.localhost(?::\d{1,5})?$`)
 
 // Detect the loopback IP (127.0.0.1)
 var reLoopback = regexp.MustCompile(regexp.QuoteMeta("127.0.0.1"))
